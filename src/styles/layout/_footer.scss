@@ -1,0 +1,38 @@
+footer {
+	background-color: $color-secondary;
+	padding: 4% 5%;
+	text-align: center;
+
+	.tag {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		margin-bottom: 3rem;
+		border-bottom: solid 1px $color-dark-pramiry;
+
+		a,
+		a:active,
+		a:link {
+			color: $color-white;
+			padding: 1rem 0;
+			font-size: 1.3rem;
+			display: block;
+			width: 15rem;
+			text-align: center;
+			cursor: pointer;
+			text-decoration: none;
+
+			&:hover {
+				background-color: lighten($color: $color-secondary, $amount: 2);
+			}
+		}
+	}
+
+	p {
+		margin: 0 auto 0;
+		font-size: 1.4rem;
+		max-width: 80rem;
+		color: $color-dark-white;
+	}
+}

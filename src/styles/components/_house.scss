@@ -1,0 +1,51 @@
+.house {
+	background-color: $color-light-white;
+	border-radius: 2px;
+	overflow: hidden;
+	text-align: center;
+
+	img {
+		width: 100%;
+	}
+
+	.title {
+		transform: translateY(-50%);
+		border-radius: 2px;
+		padding: 2rem 0;
+		font-family: "Josefin Sans";
+		font-size: 1.6rem;
+		font-weight: 400;
+		width: 80%;
+		display: inline-block;
+		background-color: $color-secondary;
+	}
+
+	.daitels {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		margin: -3rem 0.5rem 0;
+
+		.flex {
+			margin: 5rem 0;
+			display: flex;
+			i {
+				color: $color-pramiry;
+			}
+
+			p {
+				margin-left: 1rem;
+				font-size: 1.5rem;
+				color: $color-light-black;
+			}
+		}
+	}
+
+	.call {
+		padding: 2rem;
+		background-color: $color-pramiry;
+		font-family: "Josefin Sans";
+		font-size: 1.6rem;
+		font-weight: 400;
+	}
+}

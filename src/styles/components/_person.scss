@@ -1,0 +1,28 @@
+.person {
+	display: flex;
+	flex-direction: row;
+	margin: 2rem auto;
+
+	img {
+		width: 7rem;
+		border-radius: 20rem;
+	}
+
+	.text {
+		display: flex;
+		flex-direction: column;
+		margin: 2rem 2rem 0;
+
+		h4 {
+			font-family: "Josefin Sans";
+			font-weight: 400;
+			font-size: 2rem;
+		}
+
+		p {
+			font-size: 1rem;
+			margin: 1rem 0;
+			color: $color-dark-white;
+		}
+	}
+}

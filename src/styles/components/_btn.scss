@@ -1,0 +1,19 @@
+.btn,
+.btn:active,
+.btn:link {
+	color: $color-white;
+	background-color: $color-pramiry;
+	margin-top: 3rem;
+	padding: 1.5rem 4rem;
+	font-size: 1.5rem;
+	display: block;
+	width: 25rem;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 3px;
+
+	&:hover {
+		background-color: darken($color: $color-pramiry, $amount: 5);
+	}
+}

@@ -1,0 +1,466 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Nunito", "Josefin Sans", sans-serif;
+  color: #fff;
+}
+
+.btn,
+.btn:active,
+.btn:link {
+  color: #fff;
+  background-color: #c69963;
+  margin-top: 3rem;
+  padding: 1.5rem 4rem;
+  font-size: 1.5rem;
+  display: block;
+  width: 25rem;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.btn:hover,
+.btn:active:hover,
+.btn:link:hover {
+  background-color: #bf8d50;
+}
+
+.house {
+  background-color: #f9f7f6;
+  border-radius: 2px;
+  overflow: hidden;
+  text-align: center;
+}
+.house img {
+  width: 100%;
+}
+.house .title {
+  transform: translateY(-50%);
+  border-radius: 2px;
+  padding: 2rem 0;
+  font-family: "Josefin Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+  width: 80%;
+  display: inline-block;
+  background-color: #101d2c;
+}
+.house .daitels {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: -3rem 0.5rem 0;
+}
+.house .daitels .flex {
+  margin: 5rem 0;
+  display: flex;
+}
+.house .daitels .flex i {
+  color: #c69963;
+}
+.house .daitels .flex p {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  color: #555;
+}
+.house .call {
+  padding: 2rem;
+  background-color: #c69963;
+  font-family: "Josefin Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.person {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem auto;
+}
+.person img {
+  height: 7rem;
+  border-radius: 20rem;
+}
+.person .text {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 2rem 0;
+}
+.person .text h4 {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-size: 2rem;
+}
+.person .text p {
+  font-size: 1rem;
+  margin: 1rem 0;
+  color: #bcbcbc;
+}
+
+.feature {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem auto;
+  max-width: 40rem;
+}
+.feature i {
+  color: #c69963;
+}
+.feature .text {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+.feature .text h4 {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: #333;
+}
+.feature .text p {
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: #555;
+}
+
+.menuBar {
+  height: 5rem;
+  background-color: #c69963;
+  color: #fff;
+  display: flex;
+}
+.menuBar i {
+  margin: auto 2rem auto auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 15rem);
+}
+.header-main {
+  width: 75%;
+  background-image: linear-gradient(#101d2cee, #101d2cee), url("../../assets/img/hero.jpeg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+}
+.header-main-logo {
+  width: 15rem;
+  margin: 0 auto;
+}
+.header-main-subTitle {
+  color: #c69963;
+  font-size: 2rem;
+  margin: 5rem 0 2rem;
+}
+.header-main-title {
+  font-size: 4rem;
+  font-weight: 400;
+  font-family: "Josefin Sans";
+}
+.header-main .seen-on {
+  margin: 5rem 0 3rem 0;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  color: #bcbcbc;
+}
+.header-main .seen-on span {
+  padding: 0 2rem;
+  display: inline-block;
+  font-size: 1.5rem;
+  width: 15rem;
+}
+.header-main .seen-on::before {
+  content: "";
+  height: 1px;
+  width: 70%;
+  display: block;
+  background-color: currentColor;
+}
+.header-main .seen-on::after {
+  content: "";
+  height: 1px;
+  width: 70%;
+  display: block;
+  background-color: currentColor;
+}
+.header-main .land {
+  display: flex;
+  justify-content: space-evenly;
+  color: #bcbcbc;
+}
+.header-main .land-logo {
+  height: 2.5rem;
+}
+.header-realtors {
+  width: 25%;
+  background-color: #101d2c;
+  display: flex;
+  flex-direction: column;
+}
+.header-realtors .title {
+  color: #c69963;
+  font-size: 2rem;
+  margin: 10rem auto 2rem;
+}
+
+#feature {
+  margin: 5% 0;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5%;
+}
+
+.story {
+  background-color: #f9f7f6;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  height: 50rem;
+}
+.story .left {
+  width: 120%;
+  position: relative;
+  background-image: linear-gradient(rgba(198, 153, 99, 0.5), rgba(198, 153, 99, 0.5)), url("../../assets/img/back.jpg");
+  background-size: cover;
+}
+.story .left .story__1 {
+  position: absolute;
+  width: 60%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.story .left .story__2 {
+  position: absolute;
+  width: 60%;
+  top: 50%;
+  left: 50%;
+}
+.story .right {
+  height: 50%;
+  padding: 0 10%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.story .right h3 {
+  color: #c69963;
+  font-size: 2rem;
+}
+.story .right h2 {
+  margin: 2rem 0;
+  font-size: 4rem;
+  font-weight: 400;
+  font-family: "Josefin Sans";
+  color: #54483a;
+}
+.story .right p {
+  font-size: 1.6rem;
+  margin: 1rem 0;
+  color: #555;
+}
+
+#houses {
+  margin: 10% 5%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem 3rem;
+}
+
+.gallery {
+  background-color: #f9f7f6;
+  padding: 1.6rem;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  max-height: 60rem;
+  gap: 1rem;
+}
+.gallery img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.gallery .img-1 {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+.gallery .img-2 {
+  grid-column: 3/6;
+  grid-row: 1/4;
+}
+.gallery .img-3 {
+  grid-column: 6/7;
+  grid-row: 1/3;
+}
+.gallery .img-4 {
+  grid-column: 7/9;
+  grid-row: 1/3;
+}
+.gallery .img-5 {
+  grid-column: 1/3;
+  grid-row: 3/6;
+}
+.gallery .img-6 {
+  grid-column: 3/5;
+  grid-row: 4/6;
+}
+.gallery .img-7 {
+  grid-column: 5/6;
+  grid-row: 4/5;
+}
+.gallery .img-8 {
+  grid-column: 6/8;
+  grid-row: 3/5;
+}
+.gallery .img-9 {
+  grid-column: 8/9;
+  grid-row: 3/6;
+}
+.gallery .img-10 {
+  grid-column: 1/2;
+  grid-row: 6/8;
+}
+.gallery .img-11 {
+  grid-column: 2/4;
+  grid-row: 6/8;
+}
+.gallery .img-12 {
+  grid-column: 4/5;
+  grid-row: 6/8;
+}
+.gallery .img-13 {
+  grid-column: 5/8;
+  grid-row: 5/8;
+}
+.gallery .img-14 {
+  grid-column: 8/9;
+  grid-row: 6/8;
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    margin-bottom: 65rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  .header-main {
+    padding: 5rem 0;
+    width: 100%;
+  }
+  .header-main-title {
+    font-size: 4rem;
+    margin: 5rem 0;
+  }
+  .header-main .btn {
+    margin: 0 auto;
+    width: auto;
+  }
+  .header-main .land-logo {
+    height: 1.5rem;
+  }
+  .header-realtors {
+    width: 100%;
+    padding-bottom: 5rem;
+    flex-direction: row;
+  }
+  .header-realtors .title {
+    color: #c69963;
+    font-size: 2rem;
+    margin: 10rem auto 2rem;
+    display: block;
+  }
+
+  #houses {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .story {
+    height: 100%;
+    flex-direction: column;
+    margin-bottom: 10rem;
+  }
+  .story .left {
+    height: 40rem;
+    width: 100%;
+  }
+  .story .left .story__1 {
+    position: absolute;
+    width: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .story .left .story__2 {
+    position: absolute;
+    width: 40%;
+    top: 50%;
+    left: 50%;
+  }
+  .story .right {
+    margin: 5rem 0;
+    height: 50%;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 560px) {
+  #houses {
+    grid-template-columns: 1fr;
+  }
+}
+footer {
+  background-color: #101d2c;
+  padding: 4% 5%;
+  text-align: center;
+}
+footer .tag {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 3rem;
+  border-bottom: solid 1px #54483a;
+}
+footer .tag a,
+footer .tag a:active,
+footer .tag a:link {
+  color: #fff;
+  padding: 1rem 0;
+  font-size: 1.3rem;
+  display: block;
+  width: 15rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+footer .tag a:hover,
+footer .tag a:active:hover,
+footer .tag a:link:hover {
+  background-color: #132233;
+}
+footer p {
+  margin: 0 auto 0;
+  font-size: 1.4rem;
+  max-width: 80rem;
+  color: #bcbcbc;
+}

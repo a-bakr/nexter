@@ -1,0 +1,10 @@
+.menuBar {
+	height: 5rem;
+	background-color: $color-pramiry;
+	color: $color-white;
+	display: flex;
+
+	i {
+		margin: auto 2rem auto auto;
+	}
+}

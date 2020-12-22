@@ -1,0 +1,45 @@
+.house {
+  background-color: #f9f7f6;
+  border-radius: 2px;
+  overflow: hidden;
+  text-align: center;
+}
+.house img {
+  width: 100%;
+}
+.house .title {
+  transform: translateY(-50%);
+  border-radius: 2px;
+  padding: 2rem 0;
+  font-family: "Josefin Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+  width: 80%;
+  display: inline-block;
+  background-color: #101d2c;
+}
+.house .daitels {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: -3rem 0.5rem 0;
+}
+.house .daitels .flex {
+  margin: 5rem 0;
+  display: flex;
+}
+.house .daitels .flex i {
+  color: #c69963;
+}
+.house .daitels .flex p {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  color: #555;
+}
+.house .call {
+  padding: 2rem;
+  background-color: #c69963;
+  font-family: "Josefin Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+}

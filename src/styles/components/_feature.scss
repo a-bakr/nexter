@@ -1,0 +1,29 @@
+.feature {
+	display: flex;
+	flex-direction: row;
+	margin: 2rem auto;
+	max-width: 40rem;
+
+	i {
+		color: $color-pramiry;
+	}
+
+	.text {
+		display: flex;
+		flex-direction: column;
+		margin: 2rem;
+
+		h4 {
+			font-family: "Josefin Sans";
+			font-weight: 400;
+			font-size: 2.5rem;
+			color: $color-dark-black;
+		}
+
+		p {
+			font-size: 2rem;
+			margin: 1rem 0;
+			color: $color-light-black;
+		}
+	}
+}
